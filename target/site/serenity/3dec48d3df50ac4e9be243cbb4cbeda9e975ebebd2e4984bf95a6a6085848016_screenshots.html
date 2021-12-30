@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="6abb13273e1d2d82fc764d4f33ec58047859c9bafda52356ca55664ef0cd331b.html">New User Registration In Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="3dec48d3df50ac4e9be243cbb4cbeda9e975ebebd2e4984bf95a6a6085848016.html">Camilo's registration on the Utest page </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-12-2022 11:39</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">New User Registration In Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a new user, I want to register on the utest page.
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Camilo's registration on the Utest page
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f3b440277bdae699db2cadae18793503db0f072aef663c502f718eb74bc82489.png" title=" Given that Camilo wants to register on the Utest page" width="1920"/>
+                <img src="f3b440277bdae699db2cadae18793503db0f072aef663c502f718eb74bc82489.png" title=" Camilo open up" width="1920"/>
+                <img src="f3b440277bdae699db2cadae18793503db0f072aef663c502f718eb74bc82489.png" title=" Camilo opens the Utest page" width="1920"/>
+                <img src="2e160843e4d959650266b3b4570bfd787626ea98efe94e2866ca5d16cacd3ff3.png" title=" Camilo clicks on button that shows us the registration form" width="1920"/>
+                <img src="2e160843e4d959650266b3b4570bfd787626ea98efe94e2866ca5d16cacd3ff3.png" title=" Camilo open up (completed)" width="1920"/>
+                <img src="2e160843e4d959650266b3b4570bfd787626ea98efe94e2866ca5d16cacd3ff3.png" title=" Given that Camilo wants to register on the Utest page (completed)" width="1920"/>
+                <img src="29edaba99165c2018a7a50a61196691c793925badd1fc820278631478a9de960.png" title=" When Enter all the required data and necessary permissions
+| strName | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strComputer | strVersion | strLanguage | strMobile | strModel | strSystem | strPassword |
+| Camilo | Quevedo | camoeeee@hotmail.com | May | 26 | 1996 | Villavicencio | 500001 | Colombia | Windows | Windows 10 Home | Spanish | Xiaomi | Mi A3 | Android 10 | Camilo12345 |" width="1920"/>
+                <img src="29edaba99165c2018a7a50a61196691c793925badd1fc820278631478a9de960.png" title=" Camilo insert personal data" width="1920"/>
+                <img src="29edaba99165c2018a7a50a61196691c793925badd1fc820278631478a9de960.png" title=" Camilo enters 'Camilo' into button that show us the form to name" width="1920"/>
+                <img src="c6fc6f37ccd6c4fa0068bc41f1a38964232dac9e01009ad0c7d37a0576e0cff6.png" title=" Camilo enters 'Quevedo' into button that show us the form to last name" width="1920"/>
+                <img src="607fcd6992befb68a8c3cac1242e878bbea3e0f3f90b08e15cd5e437bdcff944.png" title=" Camilo enters 'camoeeee@hotmail.com' into button that show us the form to email" width="1920"/>
+                <img src="5430959a51d4066156f4b7de1baafc9eac9ccc5ff538e0409b09b8e330f43a55.png" title=" Camilo select May on button that show us the form to birth month" width="1920"/>
+                <img src="29d9b47c32d8a703fe0e5c8f38db9a6db935c6dbd03ec047a33552ca36670479.png" title=" Camilo select 26 on button that show us the form to birthday" width="1920"/>
+                <img src="5d120d99daee122eefdea601b45359c4a9d0a910a51fb65f11da7649c74924af.png" title=" Camilo select 1996 on button that show us the form to birth year" width="1920"/>
+                <img src="e8c66a2480bbef0c6d1c9c1eb11e74b0ce659e376ef9eb4b3f82127c6a0dd3bf.png" title=" Camilo clicks on button that directs to the next location" width="1920"/>
+                <img src="e8c66a2480bbef0c6d1c9c1eb11e74b0ce659e376ef9eb4b3f82127c6a0dd3bf.png" title=" Camilo insert personal data (completed)" width="1920"/>
+                <img src="227c9c51348d19d99eaf5abafedbac4c7516c8a1d5dad1a7dfc39f63984c29df.png" title=" Camilo insert personal location" width="1920"/>
+                <img src="227c9c51348d19d99eaf5abafedbac4c7516c8a1d5dad1a7dfc39f63984c29df.png" title=" Camilo enters 'Villavicencio' into button that show us the form to city" width="1920"/>
+                <img src="abcc5f22acacfb6983e0d9e2450c1062cfd99333127ec7abe4eade459400d059.png" title=" Camilo types 'ARROW_DOWN' in button that show us the form to city" width="1920"/>
+                <img src="ca11801b32d9a565e0b9f37a769407c1fd9be13a08539cf776663349caced1f7.png" title=" Camilo types 'ENTER' in button that show us the form to city" width="1920"/>
+                <img src="e0c8c7ccddf8f2ff5186c24981fd507a4417d1d8600ddbf6fcdffaabd7e9c9a9.png" title=" Camilo enters '500001' into button that show us the form to postal code" width="1920"/>
+                <img src="4db4536e3a63be423377b782de58993af39829b0abc7ad49ec48f12f773a12db.png" title=" Camilo clicks on button that directs to the next devices" width="1920"/>
+                <img src="4db4536e3a63be423377b782de58993af39829b0abc7ad49ec48f12f773a12db.png" title=" Camilo insert personal location (completed)" width="1920"/>
+                <img src="4fe04a84f873f53b03b9d0378f04ca095cdedb6fd26c3711d478019369b0be97.png" title=" Camilo insert personal devices" width="1920"/>
+                <img src="4fe04a84f873f53b03b9d0378f04ca095cdedb6fd26c3711d478019369b0be97.png" title=" Camilo clicks on button that show us the form to computer container" width="1920"/>
+                <img src="2671e9e44d1b6dc86d478260414ad3bd1409843312cecda6dea7c3d7d7f99817.png" title=" Camilo enters 'Windows' then hits ARROW_DOWN and ENTER into button that show us the form to computer" width="1920"/>
+                <img src="8aac61fea679b8514fa94e64b17c02fb5eb6610c0b18f70398017680147ddf96.png" title=" Camilo clicks on button that show us the form to version container" width="1920"/>
+                <img src="3e56847343cc9a4774f8c9cf525ea77c57e51656ee84882c7ed8739573ea539f.png" title=" Camilo enters 'Windows 10 Home' then hits ARROW_DOWN and ENTER into button that show us the form to version" width="1920"/>
+                <img src="536a668074cca141908ff1efe2ad31ec44d9ebae2213926894a1a6187257e291.png" title=" Camilo clicks on button that show us the form to language container" width="1920"/>
+                <img src="4859d16a975214de4823c679f4d00b2b7de7cadc9dda02915a28579d901c4159.png" title=" Camilo enters 'Spanish' then hits ARROW_DOWN and ENTER into button that show us the form to language" width="1920"/>
+                <img src="10fc08460aba7d3aef5fff68e95d07e75b2e58f970a8e0850fe8c9aa62397e91.png" title=" Camilo clicks on button that show us the form to mobile container" width="1920"/>
+                <img src="1dc9e33e6eef1f0636565d54816fbfbbaa0997892b274564e358640caa337966.png" title=" Camilo enters 'Xiaomi' then hits ARROW_DOWN and ENTER into button that show us the form to movile" width="1920"/>
+                <img src="6c51993f65a0d124d31b38368001d37ccca7f52841183e1f3ca7f2e19653fb79.png" title=" Camilo clicks on button that show us the form to model container" width="1920"/>
+                <img src="e97ae64f4a70f1e8262dbbcb850bce1f08f0fafa75b0c3dc1aa601807bc44968.png" title=" Camilo enters 'Mi A3' then hits ARROW_DOWN and ENTER into button that show us the form to model" width="1920"/>
+                <img src="4095208d7810fec6d5ebb1a075e2fa6ec84bc1050ed91e1171b3728ee79df751.png" title=" Camilo clicks on button that show us the form to system container" width="1920"/>
+                <img src="ec9b3236efc9fa4d713282d9fa27e3bf1b67ef28b575a83d80b8bdabbad75dc2.png" title=" Camilo enters 'Android 10' then hits ARROW_DOWN and ENTER into button that show us the form to system" width="1920"/>
+                <img src="642efdbbc3b7071f014f42747d7facb5aff9a6927cae67da73ce7318675459cc.png" title=" Camilo clicks on button that show us the form to system" width="1920"/>
+                <img src="642efdbbc3b7071f014f42747d7facb5aff9a6927cae67da73ce7318675459cc.png" title=" Camilo insert personal devices (completed)" width="1920"/>
+                <img src="012b510938a13f05d00fab1436c1ae934abbaaf821b423b790ed9a34b84887f3.png" title=" Camilo insert personal password" width="1920"/>
+                <img src="012b510938a13f05d00fab1436c1ae934abbaaf821b423b790ed9a34b84887f3.png" title=" Camilo enters 'Camilo12345' into field to user password" width="1920"/>
+                <img src="88e0a9efdfe83b73a978192952daf2a679b2127a7392f4449c77f6d859adca90.png" title=" Camilo enters 'Camilo12345' into field to confirm user password" width="1920"/>
+                <img src="2796c12d55b47d799b62d96f4e32fcdaa90f786514f270fba1b0f71c63b513df.png" title=" Camilo clicks on Check box to permission 1" width="1920"/>
+                <img src="3ba7006d1a7d06ff29e62647828753e47619b7056c52c76ee36b3daa938744a3.png" title=" Camilo clicks on Check box to permission 2" width="1920"/>
+                <img src="99f590692f72791cac3980c47c21a15c1ccab83d31459d7e3330842bc9a2a6e6.png" title=" Camilo clicks on Check box to permission 3" width="1920"/>
+                <img src="56797158e284076e26f93a94b6e0b60314f39df6f948f98b48cade131e5c16c3.png" title=" Camilo clicks on button that show us the form to password" width="1920"/>
+                <img src="7344a5175e9dee63c410fd8d81db185b0226ab1faf3c17bd6fe6bb3a96c58fef.png" title=" Camilo insert personal password (completed)" width="1920"/>
+                <img src="7344a5175e9dee63c410fd8d81db185b0226ab1faf3c17bd6fe6bb3a96c58fef.png" title=" When Enter all the required data and necessary permissions
+| strName | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strPostalCode | strCountry | strComputer | strVersion | strLanguage | strMobile | strModel | strSystem | strPassword |
+| Camilo | Quevedo | camoeeee@hotmail.com | May | 26 | 1996 | Villavicencio | 500001 | Colombia | Windows | Windows 10 Home | Spanish | Xiaomi | Mi A3 | Android 10 | Camilo12345 | (completed)" width="1920"/>
+                <img src="7344a5175e9dee63c410fd8d81db185b0226ab1faf3c17bd6fe6bb3a96c58fef.png" title=" Then he completes the registration successfully on the page
+| strFinalText |
+| Welcome to the world's largest community of freelance software testers! |" width="1920"/>
+                <img src="7344a5175e9dee63c410fd8d81db185b0226ab1faf3c17bd6fe6bb3a96c58fef.png" title=" Then response question" width="1920"/>
+                <img src="7344a5175e9dee63c410fd8d81db185b0226ab1faf3c17bd6fe6bb3a96c58fef.png" title=" Then he completes the registration successfully on the page
+| strFinalText |
+| Welcome to the world's largest community of freelance software testers! | (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
